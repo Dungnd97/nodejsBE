@@ -2,9 +2,10 @@
   "development": {
     "username": "root",
     "password": null,
-    "database": "nodejs_demo",
+    "database": "nodejs_api",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "logging": false
   },
   "test": {
     "username": "root",

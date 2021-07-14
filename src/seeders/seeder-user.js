@@ -11,13 +11,18 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-     return queryInterface.bulkInsert('Users', [{
-      firstName: 'John',
-      lastName: 'Doe',
-      email: 'example@example.com',
+    return queryInterface.bulkInsert('Users', [{
+      email: 'admin@gmail.com',
+      password: '123456',
+      firstName: 'Ngọc',
+      lastName: 'Dũng',
+      address: '',
+      gender: 1,
+      typeRole: 'ROLE',
+      keyRole: 'R1',
       createdAt: new Date(),
       updatedAt: new Date()
-    }]);
+    },]);
   },
 
   down: async (queryInterface, Sequelize) => {
