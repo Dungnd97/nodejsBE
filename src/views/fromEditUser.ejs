@@ -22,45 +22,53 @@
 <body>
     <div class="container">
         <div class="row">
-            <form action="/postUser" method="POST">
+            <form action="/putUser" method="POST">
+
+                <input type="text" value="<%= data.id %>" hidden name="id">
+
                 <div class="form-row">
                     <div class="col-12 mt-3">
-                        <h2>Create a new user</h2>
+                        <h2>Edit user</h2>
                     </div>
                     <div class="form-group col-md-6">
                         <label>Email: </label>
-                        <input type="email" name="email" class="form-control" placeholder="Email" value="">
+                        <input type="email" name="email" class="form-control" placeholder="Email"
+                            value="<%= data.email %>" />
                     </div>
 
                     <div class="form-group col-md-6">
                         <label>Password: </label>
-                        <input type="password" name="password" class="form-control" placeholder="Password">
+                        <input type="password" name="password" class="form-control" placeholder="Password" />
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>First Name: </label>
-                        <input type="text" name="firstName" class="form-control" placeholder="First Name">
+                        <input type="text" name="firstName" class="form-control" placeholder="First Name"
+                            value="<%= data.firstName %>" />
                     </div>
 
                     <div class="form-group col-md-6">
                         <label>Last Name: </label>
-                        <input type="text" name="lastName" class="form-control" placeholder="Last Name">
+                        <input type="text" name="lastName" class="form-control" placeholder="Last Name"
+                            value="<%= data.lastName %>" />
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-md-12">
                         <label>Address: </label>
-                        <input type="text" name="address" class="form-control" placeholder="123 Main St">
+                        <input type="text" name="address" class="form-control" placeholder="123 Main St"
+                            value="<%= data.address %>" />
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>Phone Number: </label>
-                        <input type="text" name="phoneNumber" class="form-control" placeholder="Phone Number">
+                        <input type="text" name="phoneNumber" class="form-control" placeholder="Phone Number"
+                            value="<%= data.phoneNumber %>" />
                     </div>
 
                     <div class="form-group col-md-3">
@@ -80,7 +88,7 @@
                         </select>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <button type="submit" class="btn btn-primary">Update</button>
                 </div>
             </form>
         </div>
