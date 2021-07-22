@@ -23,17 +23,17 @@ let handleUserLogin = (email, password) => {
                         data.infoUser = user;
                     }
                     else {
-                        data.errCode = 0;
+                        data.errCode = -1;
                         data.message = `Mật khẩu không chính xác. Vui lòng nhập Mật khẩu khác!`;
                     }
                 }
                 else {
-                    data.errCode = 2;
+                    data.errCode = -1;
                     data.message = `Email của bạn không tồn tại trong hệ thống. Vui lòng nhập Email khác!`;
                 }
             }
             else {
-                data.errCode = 1;
+                data.errCode = -1;
                 data.message = `Email của bạn không tồn tại trong hệ thống. Vui lòng nhập Email khác!`;
             }
 

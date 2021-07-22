@@ -6,7 +6,7 @@ let handleLogin = async (req, res) => {
 
     if(!email || !password){
         return res.status(500).json({
-            errCode: 1,
+            errCode: -1,
             message: 'Email và mật khẩu không được bỏ trống',
         })
     }
